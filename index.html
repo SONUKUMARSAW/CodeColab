@@ -10,7 +10,7 @@
   <script src="lib/codemirror.js"></script>
   <style>
       .CodeMirror{
-          height: 550px;
+          height: 40em;
       }
   </style>
   <script src="mode/python/python.js"></script>
@@ -19,28 +19,28 @@
 </head>
 <body>
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4" ><h1 style="color: rgb(114, 68, 68);">CodeColab</h1></div>
-    <div class="col-sm-4" ></div>
-    <div class="col-sm-4" ></div>
-  </div>
-</div>
-<div class="container-fluid">
-    <div class="row" style="height: 550px;">
-        <div class="col-sm-12" id="codeeditor">
+    <div class="row" style="position: sticky;">
+        <div class="col-sm-4" ><h1 style="color: rgb(114, 68, 68);">CodeColab</h1></div>
+        <div class="col-sm-4" ></div>
+        <div class="col-sm-4" ></div>
+    </div>
+    <div class="row" >
+        <div class="col-sm-12" id="codeeditor" style="height:auto">
         </div>
     </div>
-    <div class="row">
-    <div class = "col-sm-4"></div>
-        <div class = "col-sm-4"><h5 style="color: rgb(114, 68, 68); padding-left: 35%;">Source code at <a style="color: rgb(114, 68, 68);" href="https://github.com/SONUKUMARSAW">Github</a></h5></div>
+    <div class="row" style="position: sticky;">
+        <div class = "col-sm-4"></div>
+        <div class = "col-sm-4"><h5 style="padding-left: 30%;color: rgb(114, 68, 68);">Source code at <a href="https://github.com/SONUKUMARSAW" style=" color: rgb(114, 68, 68);">Github</a></h5></div>
         <div class = "col-sm-4"></div>
     </div>
 </div>
+
 <script>
     var myCodeEditor = CodeMirror(document.getElementById("codeeditor"),{
         lineNumbers: true,
         theme: "idea",
         mode: "python",
+        
     });
    
 </script>
